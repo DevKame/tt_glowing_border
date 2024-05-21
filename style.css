@@ -1,0 +1,73 @@
+
+button {
+    width: 160px;
+    height: 60px;
+    border: 3px solid transparent;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px rgba(200,200,200,.3) inset;
+    background:
+    linear-gradient(var(--body-bg), var(--body-bg)) padding-box,
+    radial-gradient(
+        hsl(60 80% 80%),hsl(90 80% 70%), transparent 60%)
+        no-repeat
+        130px -15px /
+        calc(var(--neonw) + 200px) var(--neonh),
+    linear-gradient(black, black) border-box;
+    animation: light 1s linear infinite;
+}
+@keyframes light {
+    0% {
+        background:
+        linear-gradient(var(--body-bg), var(--body-bg)) padding-box,
+        radial-gradient(
+            hsl(60 80% 80%),hsl(90 80% 70%), transparent 60%)
+            no-repeat
+            125px -15px /
+            var(--neonw) var(--neonh),
+        linear-gradient(black, black) border-box
+    }
+    33% {
+        background:
+        linear-gradient(var(--body-bg), var(--body-bg)) padding-box,
+        radial-gradient(
+            hsl(60 80% 80%),hsl(180 80% 70%), transparent 60%)
+            no-repeat
+            -25px -15px /
+            var(--neonw) var(--neonh),
+        linear-gradient(black, black) border-box
+    }
+    50% {
+        background:
+        linear-gradient(var(--body-bg), var(--body-bg)) padding-box,
+        radial-gradient(
+            hsl(60 80% 80%),hsl(270 80% 70%), transparent 60%)
+            no-repeat
+            -25px 45px /
+            var(--neonw) var(--neonh),
+        linear-gradient(black, black) border-box
+    }
+    83% {
+        background:
+        linear-gradient(var(--body-bg), var(--body-bg)) padding-box,
+        radial-gradient(
+            hsl(60 80% 80%),hsl(360 80% 70%), transparent 60%)
+            no-repeat
+            125px 45px /
+            var(--neonw) var(--neonh),
+        linear-gradient(black, black) border-box
+    }
+    100% {
+        background:
+        linear-gradient(var(--body-bg), var(--body-bg)) padding-box,
+        radial-gradient(
+            hsl(60 80% 80%),hsl(90 80% 70%), transparent 60%)
+            no-repeat
+            125px -15px /
+            var(--neonw) var(--neonh),
+        linear-gradient(black, black) border-box
+    }
+}
